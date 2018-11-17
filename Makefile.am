@@ -304,6 +304,10 @@ if USE_ZEUSMINER
 bfgminer_SOURCES += driver-zeusminer.c
 endif
 
+if USE_FUTUREBIT
+bfgminer_SOURCES += driver-futurebit.c
+endif
+
 if USE_AVALON
 bfgminer_SOURCES += driver-avalon.c driver-avalon.h
 endif
