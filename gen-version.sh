@@ -1,8 +1,10 @@
 #!/bin/sh
-cat <<EOF>> version.h
-#define BFG_GIT_DESCRIBE "5.5.0-MK3"
+gitdesc="5.5.0-mk3"
+version=$(echo "$gitdesc")
+cat <<EOF
+#define BFG_GIT_DESCRIBE "$gitdesc"
 #ifdef VERSION
 #  undef VERSION
 #endif
-#define VERSION "5.5.0-MK3"
+#define VERSION "$version"
 EOF
