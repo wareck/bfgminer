@@ -606,7 +606,7 @@ BFG_DRIVER(,GridSeed,scrypt,auto,[
 	$broad_udevrules && have_udevrules=true
 ])
 
-BFG_DRIVER(,FutureBit,scrypt,auto,[
+BFG_DRIVER(,FutureBit,scrypt,no,[
 	need_lowl_vcom=yes
 	has_asic=yes
 ])
