@@ -86,7 +86,7 @@ BUILDING BFGMINER
 Everything you probably want, condensed:
 	build-essential autoconf automake libtool pkg-config libcurl4-gnutls-dev
 	libjansson-dev uthash-dev libncursesw5-dev libudev-dev libusb-1.0-0-dev
-	libevent-dev libmicrohttpd-dev libhidapi-dev
+	libevent-dev libmicrohttpd-dev libhidapi-dev libgcrypt20-dev
 
 Dependencies:
 	autoconf             http://www.gnu.org/software/autoconf/
