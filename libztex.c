@@ -21,7 +21,7 @@
  * I'm assuming it was just an innocent mistake on their part.
  */
 
-#define _GNU_SOURCE
+//#define _GNU_SOURCE
 
 #include "config.h"
 
