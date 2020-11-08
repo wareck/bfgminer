@@ -23,7 +23,7 @@
 #include "lowlevel.h"
 #include "lowl-vcom.h"
 #include "util.h"
-#include <driver-futurebit.h>
+#include <bwltc-commands.h>
 
 static const uint8_t futurebit_max_chips = 0x01;
 #define FUTUREBIT_DEFAULT_FREQUENCY  600
