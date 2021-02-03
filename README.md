@@ -1,5 +1,5 @@
 ##################################################################################
-# CGminer 4.11.1 GekkoScience Compac & 2pac BM1384 #
+# BFGMINER 5.5.0  #
 ##################################################################################
 
 This is a cgminer 4.11.1 with support fot GekkoScience Compac & 2pac BM1384 Support.
@@ -10,11 +10,7 @@ This software is forked from cgminer 4.11.1 original from ckolivas.
 
 ## GekkoScience compac Usb miner ##
 
-![](https://github.com/wareck/bfgminer/blob/bfgminer/docs/gekko.jpg)
-
-## GekkoScience 2pac Usb miner ##
-
-![](https://github.com/wareck/bfgminer/blob/bfgminer/docs/gekko.jpg)
+![](https://github.com/wareck/bfgminer/blob/bfgminer/docs/moonlander.jpg)
 
 This software use a slighty moddified driver from novak's gekko driver.
 
