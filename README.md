@@ -10,11 +10,11 @@ This software is forked from cgminer 4.11.1 original from ckolivas.
 
 ## GekkoScience compac Usb miner ##
 
-![](https://raw.githubusercontent.com/wareck/bfgminer/master/docs/gekko.jpg)
+![](https://github.com/wareck/bfgminer/blob/bfgminer/docs/gekko.jpg)
 
 ## GekkoScience 2pac Usb miner ##
 
-![](https://raw.githubusercontent.com/wareck/bfgminer/master/docs/2pac.jpg)
+![](https://github.com/wareck/bfgminer/blob/bfgminer/docs/gekko.jpg)
 
 This software use a slighty moddified driver from novak's gekko driver.
 
