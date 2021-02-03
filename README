@@ -19,11 +19,12 @@ to build this specific code on linux:
 	git clone https://github.com/wareck/bfgminer.git
 	cd bfgminer
 	sudo usermod -a -G dialout,plugdev $USER
-	sudo cp 70-bfgminer.rules /etc/udev/rules.d/
 	CFLAGS="-O2 -march=native" ./autogen.sh
 	./configure --enable-scrypt --enable-futurebit
 	make
 	make install
+	sudo cp 70-bfgminer.rules /etc/udev/rules.d/
+
 
 ### Option Summary ###
 
