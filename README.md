@@ -28,24 +28,23 @@ to build this specific code on linux:
 ### Option Summary ###
 
 ```
-  --gekko-compac-freq <clock>   Chip clock speed (MHz) default is 200 Mhz
-  --gekko-2pac-freq <clock> Chip clok speed (Mhz) default is 150 Mhz 
+  --set MLD:clock=<clock>  Chip clock speed (MHz) default is 600 Mhz
   --suggest-diff <value> Limit diff for starting mine default is 32
 ```
 
 ### Command line ###
 
 ```
- ./cgminer -o pool_url -u username -p password --gekko-compac-freq 200 --gekko-2pac-freq 150 
+ ./bfgminer -o pool_url -u username -p password -S all 
 ```
 
 For windows users, you can donwload the release zip file
 
-Inside you can find a cgminer_run.bat file and you can adjust you settings.
+Inside you can find a bfgminer_run.bat file and you can adjust you settings.
 
 ## Nicehash extranonce support ##
 
-You can use your miner with last extranonce support for nicehash by adding #xnsub at the address end, like this:
+You can use your miner with last extranonce support for nicehash by adding /#xnsub at the address end, like this:
 
-	./cgminer -o stratum+tcp://scrypt.eu.nicehash.com:3333#xnsub -u my_btc_address -p x --gekko-compac-freq 200 --gekko-2pac-freq 150
+	./bfgminer --scrypt -o stratum+tcp://litecoinpool.org:3333/#skipcbcheck#xnsub -u my_ltc_address -p x --set MLD:clock=600
 	
