@@ -1,6 +1,4 @@
-##################################################################################
-# BFGMINER 5.5.0-mk4                                                             #
-##################################################################################
+# BFGMINER 5.5.0-mk4                                                        
 
 This is a bfgminer 5.5.0 with support for all last drivers and Futurebit Moonlander2.
 
@@ -17,7 +15,7 @@ to build this specific code on linux:
 	sudo apt-get update -y
 	sudo apt-get install  build-essential autoconf automake libtool pkg-config libcurl4-gnutls-dev \
         libjansson-dev uthash-dev libncursesw5-dev libudev-dev libusb-1.0-0-dev \
-        libevent-dev libmicrohttpd-dev libhidapi-dev libgcrypt20-dev
+        libevent-dev libmicrohttpd-dev libhidapi-dev libgcrypt20-dev -y
 	git clone https://github.com/wareck/bfgminer.git
 	cd bfgminer
 	sudo usermod -a -G dialout,plugdev $USER
