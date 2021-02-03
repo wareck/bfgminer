@@ -1,32 +1,29 @@
 ##################################################################################
-# BFGMINER 5.5.0  #
+# BFGMINER 5.5.0-mk4                                                             #
 ##################################################################################
 
-This is a cgminer 4.11.1 with support fot GekkoScience Compac & 2pac BM1384 Support.
+This is a bfgminer 5.5.0 with support for all last drivers and Futurebit Moonlander2.
 
-This software is forked from cgminer 4.11.1 original from ckolivas.
+This software is forked from bfgminer original .
 
 (you can refer to original documentation to docs/README)
 
-## GekkoScience compac Usb miner ##
+## Moonlander2 scrtypt Usb miner ##
 
 ![](https://github.com/wareck/bfgminer/blob/bfgminer/docs/moonlander.jpg)
-
-This software use a slighty moddified driver from novak's gekko driver.
-
-I allows working with icarus miner and gekko on same rig.
 
 to build this specific code on linux:
 
 	sudo apt-get update -y
-	sudo apt-get install build-essential autoconf automake libtool pkg-config libcurl4-openssl-dev libudev-dev \
-	libjansson-dev libncurses5-dev -y
-	git clone https://github.com/wareck/cgminer-gekko.git
-	cd cgminer-gekko
+	sudo apt-get install  build-essential autoconf automake libtool pkg-config libcurl4-gnutls-dev \
+        libjansson-dev uthash-dev libncursesw5-dev libudev-dev libusb-1.0-0-dev \
+        libevent-dev libmicrohttpd-dev libhidapi-dev libgcrypt20-dev
+	git clone https://github.com/wareck/bfgminer.git
+	cd bfgminer
 	sudo usermod -a -G dialout,plugdev $USER
-	sudo cp 01-cgminer.rules /etc/udev/rules.d/
+	sudo cp 70-bfgminer.rules /etc/udev/rules.d/
 	CFLAGS="-O2 -march=native" ./autogen.sh
-	./configure --enable-gekko
+	./configure --enable-scrypt --enable-futurebit
 	make
 	make install
 
