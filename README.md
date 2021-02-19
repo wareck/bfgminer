@@ -6,7 +6,7 @@ This software is forked from bfgminer original .
 
 (you can refer to original documentation to docs/README)
 
-## Moonlander2 scrtypt Usb miner ##
+### Moonlander2 scrtypt Usb miner ##
 
 ![](https://raw.githubusercontent.com/wareck/bfgminer/bfgminer/docs/moonlander.jpg)
 
