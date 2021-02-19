@@ -10,6 +10,7 @@ This software is forked from bfgminer original .
 
 ![](https://raw.githubusercontent.com/wareck/bfgminer/bfgminer/docs/moonlander.jpg)
 
+
 to build this specific code on linux:
 
 	sudo apt-get update -y
