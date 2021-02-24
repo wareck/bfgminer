@@ -11954,10 +11954,10 @@ void _bfg_clean_up(bool restarting)
 		if (!opt_realquiet && successful_connect)
 			print_summary();
 	}
-
+#ifdef USE_CPUMINING
 	if (opt_n_threads > 0)
 		free(cpus);
-
+#endif
 	curl_global_cleanup();
 	
 #ifdef WIN32
