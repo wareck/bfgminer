@@ -3762,7 +3762,7 @@ static int statusy;
 static int devsummaryYOffset;
 static int total_lines;
 #endif
-struct cgpu_info *cpus;
+
 
 bool _bfg_console_cancel_disabled;
 int _bfg_console_prev_cancelstate;
@@ -11760,7 +11760,6 @@ void bfg_watchdog(struct cgpu_info * const cgpu, struct timeval * const tvp_now)
 			}
 			else if (cgpu->status == LIFE_WAIT)
 				cgpu->status = LIFE_WELL;
-
 #ifdef USE_CPUMINING
 			if (!strcmp(cgpu->drv->dname, "cpu"))
 				return;
@@ -11954,12 +11953,14 @@ void _bfg_clean_up(bool restarting)
 		if (!opt_realquiet && successful_connect)
 			print_summary();
 	}
+
 #ifdef USE_CPUMINING
 	if (opt_n_threads > 0)
 		free(cpus);
 #endif
+
 	curl_global_cleanup();
-	
+
 #ifdef WIN32
 	WSACleanup();
 #endif
