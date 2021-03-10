@@ -85,7 +85,7 @@ AC_CHECK_HEADERS([sys/mman.h])
 AC_CHECK_HEADERS([sys/prctl.h])
 AC_CHECK_HEADERS([sys/file.h])
 AC_CHECK_HEADERS([sys/termios.h])
-AC_CHECK_HEADERS([sys/unistd.h])
+//AC_CHECK_HEADERS([sys/unistd.h])
 AC_CHECK_HEADERS([linux/spi/spidev.h])
 
 AC_CHECK_MEMBER([struct i2c_msg.buf],[
@@ -606,7 +606,7 @@ BFG_DRIVER(,GridSeed,scrypt,auto,[
 	$broad_udevrules && have_udevrules=true
 ])
 
-BFG_DRIVER(,FutureBit,scrypt,auto,[
+BFG_DRIVER(,FutureBit,scrypt,no,[
 	need_lowl_vcom=yes
 	has_asic=yes
 ])
