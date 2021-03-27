@@ -1,5 +1,5 @@
 #!/bin/sh
-gitdesc="5.5.0-wrk"
+gitdesc="5.5.0-wrk2"
 version=$(echo "$gitdesc")
 cat <<EOF
 #define BFG_GIT_DESCRIBE "$gitdesc"
