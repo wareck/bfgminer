@@ -21,7 +21,7 @@ to build this specific code on linux:
 	cd bfgminer
 	sudo usermod -a -G dialout,plugdev $USER
 	CFLAGS="-O2 -march=native" ./autogen.sh
-	./configure --enable-scrypt
+	./configure --enable-scrypt --enable-futurebit
 	make
 	make install
 	sudo cp 70-bfgminer.rules /etc/udev/rules.d/
